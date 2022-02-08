@@ -1,0 +1,22 @@
+
+    
+    
+    
+    {{#each randomSelection}} 
+       <img src="{{this.image_url}}" alt="Not found">
+    <div>
+        <h1>{{this.name }}</h1>
+             <p>{{this.description}}</p>
+             <p>{{this.tagline}} </p> 
+              <p>{{this.brewers_tips}}</p>
+                <h2>Food Pairing</h2>
+                {{#each this.food_pairing}} 
+                    <ul>
+                        <li>
+                            {{this}}
+                        </li>
+                    </ul>
+
+                {{/each}}    
+    </div>
+      {{/each}}
